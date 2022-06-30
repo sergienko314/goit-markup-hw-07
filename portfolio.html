@@ -178,56 +178,69 @@
  </main>
 
 <!-- Подвал -->
-<footer class="footer-main">
-    <div class="footer-style conteiner">
-     <div class="footer-gep">
-         <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
-       <address class="address-style">
-        <ul class="address-list list">
-            <li class="item">
-            <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwik_cm1_Jr4AhUux4sKHWJNCagQ8gF6BAgCEAE" class="footer-contact-address">г. Киев, пр-т Леси Украинки, 26</a>
+<footer class="footer">
+    <div class="footer__style conteiner">
+         <address class="address">
+            <a href="./index.html" class="footer__logo"><span class="logo-color">Web</span>Studio</a>
+             <ul class="address__list list">
+                <li class="address__item">
+            <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwik_cm1_Jr4AhUux4sKHWJNCagQ8gF6BAgCEAE" class="address__location">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li class="item">
-            <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
+            <li class="address__item">
+            <a href="mailto:info@devstudio.com" class="address__contact">info@devstudio.com</a>
             </li>
-            <li class="item">
-            <a class="footer-contact" href="tel:+380991956428">+38 096 111 11 11</a>
+            <li class="address__item">
+            <a class="address__contact" href="tel:+380991956428">+38 096 111 11 11</a>
             </li>
         </ul>
        </address>
-     </div>
-       <div class="footer-block">
-        <p>присоединяйтесь</p>
-         <ul class="footer-social list">
+       <div class="footer__social">
+        <p class="footer__social--title">присоединяйтесь</p>
+         <ul class="footer__social--list list">
          <li>   
-           <a class="footer-link" href="">
-               <svg class="footer-icon" height="20" width="20">
+           <a class="footer__social--link" href="">
+               <svg class="footer__social--icon" height="20" width="20">
                <use href="./img/icons.svg#icon-instagram"></use>
                </svg>
            </a>
          </li>
          <li>
-             <a class="footer-link" href="">
-                 <svg class="footer-icon" height="20" width="20">
+             <a class="footer__social--link" href="">
+                 <svg class="footer__social--icon" height="20" width="20">
                  <use href="./img/icons.svg#icon-twitter"></use>
                  </svg>
              </a>
          </li>
          <li>
-             <a class="footer-link" href="">
-                 <svg class="footer-icon" height="20" width="20">
+             <a class="footer__social--link" href="">
+                 <svg class="footer__social--icon" height="20" width="20">
                  <use href="./img/icons.svg#icon-facebook"></use>
                  </svg>
              </a>
          </li>
          <li>
-             <a class="footer-link" href="">
-                 <svg class="footer-icon" height="20" width="20">
+             <a class="footer__social--link" href="">
+                 <svg class="footer__social--icon" height="20" width="20">
                  <use href="./img/icons.svg#icon-linkedin"></use>
                  </svg>
              </a>
          </li>
          </ul>
+         </div>
+        <div class="subscription">
+          <h3 class="subscription__heading">Подпишитесь на рассылку</h3>
+           <div class="subscription__section">
+            <form class="subscription__form">
+              <label class="subscription__lable">
+                <input class="subscription__email" name="foot-email" type="email" placeholder="E-mail"  minlength="3" required>
+              </label>
+            </form>
+           <button class="subscription__button list" type="button">Подписаться
+            <svg class="subscription__icon"hieght="24" width="24">
+            <use href="./img/icons/icons.svg#icon-telegram"></use>
+            </svg>
+           </button>
+          </div> 
        </div>
     </div>
   </footer>
