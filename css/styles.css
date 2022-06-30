@@ -818,7 +818,7 @@ a {
 }
 
 
-.subscription-heading {
+.subscription__heading {
     text-transform:uppercase;
     margin: 0;
     margin-bottom: 20px;
@@ -835,14 +835,15 @@ a {
     display: inline-flex;
 }
 
-.subscription__lable:hover .footer-email,
-.subscription__lable:focus .footer-email {
+.subscription__lable:hover .subscription__email,
+.subscription__lable:focus .subscription__email {
     border:1px solid var(--accent-text-color);
     outline: 0;
     border-color: 0;
 }
 
 .subscription__email {
+
     width: 358px;
     height: 50px;
     padding-top: 15px;
@@ -857,11 +858,11 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20/16);
-
     align-items: center;
     letter-spacing: 0.03em;
     transition: border 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
 }
 
 .subscription__email:not(:placeholder-shown):required:valid {
