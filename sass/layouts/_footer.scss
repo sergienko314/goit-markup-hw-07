@@ -1,0 +1,212 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__style {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.footer__logo {
+    margin-bottom: 20px;
+
+
+    font-style: normal;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #ffffff;
+
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+
+}
+
+.address__contact {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transform: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.address__location {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.address__contact:hover,
+.address__contact:focus {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+
+/* footer social links */
+
+.footer__social--title {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin: 0%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.footer__social--list {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.footer__social--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.footer__social--icon {
+    fill: #FFFFFF;
+    transition: fill 250ms;
+}
+
+.footer__social--link:hover,
+.footer__social--link:focus {
+    background-color: var(--accent-text-color);
+}
+
+/* Footer form */
+.subscription {
+    margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.subscription__heading {
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscription__section {
+    display: inline-flex;
+}
+
+.subscription__lable:hover .subscription__email,
+.subscription__lable:focus .subscription__email {
+    border: 1px solid var(--accent-text-color);
+    outline: 0;
+    border-color: 0;
+}
+
+.subscription__email {
+
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
+    align-items: center;
+    letter-spacing: 0.03em;
+    transition: border 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+}
+
+.subscription__email:not(:placeholder-shown):required:valid {
+    border-color: chartreuse;
+}
+
+.subscription__email:not(:placeholder-shown):required:invalid {
+    border-color: #f44336;
+}
+
+.subscription__button {
+    padding: 10px 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+}
+
+.subscription__icon {
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    fill: #F5F4FA;
+}
